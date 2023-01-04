@@ -3,12 +3,12 @@ services:
   webserver:
     image: nginx:latest
     ports:
-      - 80:80
+      - 8080:80
       - 443:443
     restart: always
     volumes:
       - ./site:/etc/site:ro
-      - ./nginx/conf/:/etc/nginx/conf.d/:ro
+      - ./nginx/:/etc/nginx/conf.d/:ro
       - ./certbot/www:/var/www/certbot/:ro
       - ./certbot/conf/:/etc/nginx/ssl/:ro
   certbot:

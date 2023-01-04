@@ -1,5 +1,5 @@
 start:
-	docker compose up
+	docker compose up -d
 
 dry:
 	docker compose run --rm  certbot certonly --webroot --webroot-path /var/www/certbot/ --dry-run -d <domain>
