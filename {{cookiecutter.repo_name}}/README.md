@@ -4,17 +4,15 @@ A repo to expose a simple HTTPS web server with a valid certificate.
 
 ## Instructions
 
-1. Swap `<domain>` project wide for the web server domain name.
+1. Run `make start`.
 
-2. Run `make start`.
+2. Run `make dry`. You should see `The dry run was successful.`.
 
-3. Run `make dry`. You should see `The dry run was successful.`.
+3. Run `make certs`.
 
-4. Run `make certs`.
+4. Uncomment the code inside `default.conf`.
 
-5. Uncomment the code inside `default.conf`.
-
-6. Run `make reload`.
+5. Run `make reload`.
 
 You should now be able to send HTTPS requests to your server via your domain.
 
